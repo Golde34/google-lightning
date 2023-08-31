@@ -6,7 +6,7 @@ let queue = []
 
 // create numbers
 function showNumbers() {
-    let array = document.querySelectorAll('div.yuRUbf>a,div.r>a');
+    let array = document.querySelectorAll('div.yuRUbf>div>a,div.r>a');
     for (let i = 0; i < array.length; i++) {
         let positionHolder = document.createElement("span");
         positionHolder.style.position = "relative";
@@ -26,7 +26,7 @@ function openLinkByShortcut(key) {
     let position = parseInt(key) - 1
     console.log(key);
     console.log(position);
-    let all_link = document.querySelectorAll('div.yuRUbf>a,div.r>a');
+    let all_link = document.querySelectorAll('div.yuRUbf>div>a,div.r>a');
     if (!(key === rush_trigger)) {
         console.log('open in current tab');
         all_link[position].click()
